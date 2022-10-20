@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Icy Newtab",
+  "version": "0.99.001",
+  "description": "Icy Newtab は Chromium ベースのウェブ・ブラウザーの新しいタブを変更します。",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "history",
+    "bookmarks",
+    "topSites",
+    "downloads",
+    "system.memory",
+    "system.cpu",
+    "search",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
